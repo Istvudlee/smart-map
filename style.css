@@ -1475,6 +1475,13 @@ margin-top: 45px;
 #mapyandexpoint {
     width: 100%;
 }  
+#proektmap h3 {
+    margin: 0;
+     font-weight: 400;
+    text-align: center;
+    font-size:36px;
+    text-transform: uppercase;
+}
  /*-----------------Блок под карту проекто-------------------*/
 
 
