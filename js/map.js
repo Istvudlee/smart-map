@@ -3,7 +3,7 @@
     ymaps.ready(init);
     function init(){ 
         // Создание карты.    
-        var myMap = new ymaps.Map("map", {
+        var myMap = new ymaps.Map("mapyandexpoint", {
             // Координаты центра карты.
             // Порядок по умолчанию: «широта, долгота».
             // Чтобы не определять координаты центра карты вручную,
