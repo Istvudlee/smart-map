@@ -1460,10 +1460,25 @@ margin-top: 45px;
 }
 .active { 
     color: #fff !important;
-    background: #1996ce !important;}
+    background: #1996ce !important;
+}
 
-   
-@media (min-width: 430px) {
+/*-----------------Блок под карту проекто-------------------*/
+#proektmap {
+    width: 1170px;
+    margin: 0 auto;
+    height: auto;
+}
+#commentpoint {
+    width: 100%;
+}
+#mapyandexpoint {
+    width: 100%;
+}  
+ /*-----------------Блок под карту проекто-------------------*/
+
+
+   @media (min-width: 430px) {
     #fonhead_mob {
         display: none;
     }
