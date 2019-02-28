@@ -13,7 +13,12 @@
             // от 0 (весь мир) до 19.
             zoom: 6.5
         });
-        var myPlacemark = new ymaps.Placemark([56.225330311259455, 44.07214804796516], {}, {
+        var myPlacemark = new ymaps.Placemark([56.225330311259455, 44.07214804796516], {
+            balloonContentHeader: "ТЦ «МЕГА» г.Нижний Новгород",
+            balloonContentBody: "Описание<br><img src='https://smart-home-nn.ru/assets/templates/img/slide4.jpg'>",
+            balloonContentFooter: "Подвал",
+            hintContent: "ТЦ «МЕГА» г.Нижний Новгород"
+        }, {
             iconLayout: 'default#image',
             iconImageHref:'img/placeholder.svg',
             iconImageSize: [50, 50],
@@ -37,9 +42,15 @@
             iconImageSize: [50, 50],
             iconImageOffset: [-24, -40]
         });
+        var myPlacemarkblue4 = new ymaps.Placemark([55.71252, 43.524501], {}, {
+            iconLayout: 'default#image',
+            iconImageHref:'img/placeholder.svg',
+            iconImageSize: [50, 50],
+            iconImageOffset: [-24, -40]
+        });
         myMap.geoObjects.add(myPlacemark);
         myMap.geoObjects.add(myPlacemarkred1);
         myMap.geoObjects.add(myPlacemarkblue2);
         myMap.geoObjects.add(myPlacemarkblue3);
-
+        myMap.geoObjects.add(myPlacemarkblue4);
     }
