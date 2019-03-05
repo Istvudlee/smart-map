@@ -1470,7 +1470,20 @@ margin-top: 45px;
     height: auto;
 }
 #commentpoint {
-    width: 100%;
+    width: 1170px;
+}
+#blplaceto {
+width: 440px;
+margin: 20px auto;
+padding-bottom: 20px;
+}
+#blplaceto p {
+    display: inline-block;
+    padding-left: 20px;
+}
+#blplaceto p img {
+    padding-bottom: -20px;
+    width: 40px;
 }
 #mapyandexpoint {
     width: 1170px;
@@ -1486,8 +1499,8 @@ margin-top: 45px;
  /*-----------------Блок под карту проекто-------------------*/
 
 
-   @media (min-width: 430px) {
-    #fonhead_mob {
+@media (min-width: 430px) {
+   #fonhead_mob {
         display: none;
     }
    .hero-carousel {
@@ -1498,7 +1511,7 @@ margin-top: 45px;
    }
    #blockwork-mob {
       display: none;
-  }
+   }
 }
 @media (max-width: 430px) { 
     body {
@@ -1514,6 +1527,9 @@ margin-top: 45px;
    #fonhead {
       display: none;
     }
+    #proektmap {
+        display: none;
+     }
     #fonhead_mob {
       color: #fff;
       display: block;
