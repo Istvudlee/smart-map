@@ -2080,7 +2080,7 @@ p.tes {
 .my-hint {
     display: inline-block;
     padding: 5px;
-    height: 35px;
+    height: auto;
     position: relative;
     left: -10px;
     width: 195px;
@@ -2089,8 +2089,8 @@ p.tes {
     color: #333333;
     text-align: center;
     vertical-align: middle;
-    background-color: #faefb6;
-    border: 1px solid #CDB7B5;
+    background-color: rgb(237, 246, 250);
+    border: 1px solid #1996ce;
     border-radius: 20px;
     font-family: Arial;
 }
