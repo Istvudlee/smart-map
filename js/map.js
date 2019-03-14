@@ -11,8 +11,8 @@
             center: [56.47758636, 40.75529169],
             // Уровень масштабирования. Допустимые значения:
             // от 0 (весь мир) до 19.
-            zoom: 6.5,
-            controls: ['default']
+            zoom: 5.5,
+            controls: []
         });
          HintLayout = ymaps.templateLayoutFactory.createClass( "<div class='my-hint'>" +
             "<b>{{ properties.hintContent }}</b>" +
@@ -37,6 +37,30 @@
                 }
             }
         );
+        var myPlacemarkChasDomSarNik = new ymaps.Placemark([54.148069, 45.126736], {
+            balloonContentHeader: "Частный дом - г.Саранск, п.Николаевка",
+            balloonContentBody: "Управление светом, розеточными</br> группами. Автоматизация систем</br> отопления, водоснабжения, </br>канализации. Защита от протечек </br>воды и утечки газа. Видеонаблюдение. </br>Охранно-пожарная сигнализация. </br>Управление теплыми полами. <img src='' width='150'>",
+            balloonContentFooter: "<b>Время работ: 3.5 мес года</b> </br> <a href='https://smart-home-nn.ru/our-projects/'>Подробнее о проекте</a> ",
+            hintContent: "Частный дом - г.Саранск, п.Николаевка"
+        }, {
+            hintLayout: HintLayout,
+            iconLayout: 'default#image',
+            iconImageHref:'img/placeholdertest.svg',
+            iconImageSize: [50, 50],
+            iconImageOffset: [-24, -40]
+        });
+        var myPlacemarkChasDomZEmPol = new ymaps.Placemark([56.156345, 44.086278], {
+            balloonContentHeader: "Частный дом - Котеджный поселок</br>Земляничная поляна",
+            balloonContentBody: " Управление шторами. Система защиты</br> от протечки воды. </br>Систему сбора данных от</br> счетчиков электричества и воды.</br> Управление системами </br>отопления, кондиционирования.</br> Управление воротами</br><img src='' width='150'>",
+            balloonContentFooter: "<b>Время работ: 3.5 мес года</b> </br> <a href='https://smart-home-nn.ru/our-projects/'>Подробнее о проекте</a> ",
+            hintContent: "Частный дом - котеджный поселок Земляничная поляна"
+        }, {
+            hintLayout: HintLayout,
+            iconLayout: 'default#image',
+            iconImageHref:'img/placeholdertest.svg',
+            iconImageSize: [50, 50],
+            iconImageOffset: [-24, -40]
+        });
         var myPlacemarkIstok = new ymaps.Placemark([56.259099, 43.884705], {
             balloonContentHeader: "ГК «Исток» Приемный пункт макулатуры",
             balloonContentBody: "Беспроводная система 'Умный дом'. </br> Управление обогревателями (конвектора)</br><img src='' width='150'>",
@@ -205,4 +229,6 @@
         myMap.geoObjects.add(myPlacemarkChasDom);
         myMap.geoObjects.add(myPlacemarkChasDom2Vet);
         myMap.geoObjects.add(myPlacemarkIstok);
+        myMap.geoObjects.add(myPlacemarkChasDomSarNik);
+        myMap.geoObjects.add(myPlacemarkChasDomZEmPol);
     }
